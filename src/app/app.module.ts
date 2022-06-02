@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { FilmInfoComponent } from './film-info/film-info.component';
@@ -25,6 +27,8 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
     FlexLayoutModule,
     MatToolbarModule,
     MatCardModule,
+    MatIconModule,
+    MatSidenavModule,
   ],
   declarations: [
     AppComponent,
