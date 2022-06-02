@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { FilmInfoComponent } from './film-info/film-info.component';
@@ -23,6 +24,7 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatToolbarModule,
+    MatCardModule,
   ],
   declarations: [
     AppComponent,
