@@ -9,7 +9,7 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./app-menu.component.css'],
 })
 export class AppMenuComponent {
-  isHandset$: Observable<boolean> = this.breakpointObserver
+  isHandset: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
     .pipe(
       map((result) => result.matches),

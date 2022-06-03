@@ -1,35 +1,48 @@
-<mat-sidenav-container
-  class="sidenav-container"
-  fxShow="true"
-  fxHide.gt-sm="true"
->
+<mat-sidenav-container class="sidenav-container">
   <mat-sidenav
     #drawer
     class="sidenav"
-    fixedInViewport
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="(isHandset$ | async) === false"
+    [ngClass]="{ hidden: (isHandset | async) === false }"
+    fixedInViewport="false"
+    [attr.role]="(isHandset | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset | async) ? 'over' : 'side'"
+    [opened]="(isHandset | async) === false"
   >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="/movies">LISTE DE FILMS</a>
-      <a mat-list-item href="/movies">MOVIE PICKER</a>
+      <a mat-list-item routerLink="movies">LISTE DE FILMS</a>
+      <a mat-list-item routerLink="">FILM PICKER</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="accent">
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
+        *ngIf="isHandset | async"
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>formula-one-bets-app</span>
+      <span class="spacer"></span>
+      <span>OnRegardeQuoiCeSoir ?</span>
+      <span class="spacer"></span>
+      <a
+        routerLink="/movies"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        mat-list-item
+        >LISTE DE FILMS</a
+      >
+      <a
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        mat-list-item
+        >FILM PICKER</a
+      >
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { FilmInfoComponent } from './film-info/film-info.component';
@@ -31,6 +32,7 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    MatButtonModule,
   ],
   declarations: [
     AppComponent,
