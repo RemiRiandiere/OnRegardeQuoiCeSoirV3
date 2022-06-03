@@ -1,24 +1,17 @@
-mat-toolbar {
-  background-color: grey;
-  height: 7vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+.sidenav-container {
+  height: 100%;
 }
 
-a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
+.sidenav {
+  width: 200px;
 }
 
-a:hover {
-  text-decoration: underline;
+.sidenav .mat-toolbar {
+  background: inherit;
 }
 
-.active {
-  color: #666;
-  text-decoration: underline;
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }

@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 import { AppComponent } from './app.component';
 import { FilmInfoComponent } from './film-info/film-info.component';
@@ -29,6 +30,7 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
     MatCardModule,
     MatIconModule,
     MatSidenavModule,
+    MatListModule,
   ],
   declarations: [
     AppComponent,

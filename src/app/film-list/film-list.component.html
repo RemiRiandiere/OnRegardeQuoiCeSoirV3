@@ -1,10 +1,9 @@
-<app-menu></app-menu>
 <div id="container">
   <div fxLayout="row wrap" fxLayoutGap="10px grid" class="film-list">
     <div fxFlex="20%" *ngFor="let movie of movies">
       <div class="movie-container">
         <img src="{{ movie.imgUrl }}" alt="{{ movie.title }}" class="poster" />
-        <div class="movie-hover-effect">
+        <div fxHide fxShow.gt-sm class="movie-hover-effect">
           <p style="font-weight: bold; font-size: 20px;">{{ movie.title }}</p>
           <p>{{ movie.synopsis }}</p>
         </div>
