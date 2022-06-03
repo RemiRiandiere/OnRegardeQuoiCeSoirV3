@@ -1,32 +1,6 @@
 /* Add application styles & imports to this file! */
-@use '~@angular/material' as mat;
 
-@include mat.core();
-
-$primary-color-dark: #5d4037;
-$primary-color: #795548;
-$primary-color-light: #d7ccc8;
-$primary-color-text: #ffffff;
-$accent-color: #009688;
-$primary-text-color: #212121;
-$secondary-text-color: #757575;
-$divider-color: #bdbdbd;
-
-$ORQCS-theme-primary: mat.define-palette($primary-color-dark);
-$ORQCS-theme-accent: mat.define-palette($accent-color);
-$ORQCS-theme-warn: mat.define-palette(mat.$red-palette);
-
-$ORQCS-theme: mat.define-light-theme(
-  (
-    color: (
-      primary: $ORQCS-theme-primary,
-      accent: $ORQCS-theme-accent,
-      warn: $ORQCS-theme-warn,
-    ),
-  )
-);
-
-@include mat.all-component-theme($ORQCS-theme);
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 body {
   margin: 0px;
