@@ -24,7 +24,7 @@
                 "input": "src/ORQCS-theme.scss",
                 "inject": false
               },
-              "styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
