@@ -27,13 +27,14 @@
 .mat-toolbar a {
   display: inline-block;
   margin: 0 5px;
-  color: white;
 }
 
 a {
   position: relative;
   text-decoration: none;
   text-underline-offset: 6px;
+  color: white;
+  text-decoration-color: #4db6ac;
 }
 
 .active {
@@ -41,6 +42,7 @@ a {
   cursor: default;
   pointer-events: none;
   font-weight: bold;
+  text-decoration-color: #4db6ac;
 }
 
 a:before {
@@ -50,7 +52,7 @@ a:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: #ffffff;
+  background: #4db6ac;
   visibility: hidden;
   transform: scaleX(0);
   transition: 0.25s linear;
