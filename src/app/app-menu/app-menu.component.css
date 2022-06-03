@@ -29,6 +29,10 @@
   margin: 0 5px;
 }
 
+.mat-toolbar img {
+  height: 100%;
+}
+
 a {
   position: relative;
   text-decoration: none;
