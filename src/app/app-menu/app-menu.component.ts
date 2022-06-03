@@ -9,7 +9,8 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./app-menu.component.css'],
 })
 export class AppMenuComponent {
-  logo_path: string = '../assets/logo/LogoORQCS.png';
+  logo_path: string =
+    'https://raw.githubusercontent.com/RemiRiandiere/OnRegardeQuoiCeSoirV3/master/src/app/assets/logo/LogoORQCS.PNG';
 
   isHandset: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
