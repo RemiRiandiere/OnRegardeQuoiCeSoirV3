@@ -21,10 +21,10 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               {
-                "input": "src/ORQCS-theme.scss",
+                "input": "ORQCS-theme.scss",
                 "inject": false
               },
-              "src/styles.css"
+              "styles.scss"
             ],
             "scripts": []
           },
@@ -72,7 +72,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "styles": ["styles.css"],
+            "styles": [
+              {
+                "input": "ORQCS-theme.scss",
+                "inject": false
+              },
+              "styles.scss"
+            ],
             "scripts": [],
             "assets": ["src/favicon.ico", "src/assets"]
           }
